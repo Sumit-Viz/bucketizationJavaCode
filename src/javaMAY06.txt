@@ -1,0 +1,862 @@
+line no. 1
+line no. 2
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6]
+nmetric is 19542
+line no. 3
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb]
+nmetric is 31885
+line no. 4
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357]
+nmetric is 46594
+line no. 5
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144]
+nmetric is 64212
+line no. 6
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83]
+nmetric is 85641
+line no. 7
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d]
+nmetric is 86067
+line no. 8
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92]
+nmetric is 86471
+line no. 9
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21]
+nmetric is 86833
+line no. 10
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e]
+nmetric is 87202
+line no. 11
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e]
+nmetric is 87522
+line no. 12
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8]
+nmetric is 87798
+line no. 13
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19]
+nmetric is 88103
+line no. 14
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db]
+nmetric is 88411
+line no. 15
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3]
+nmetric is 114640
+line no. 16
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b]
+nmetric is 115016
+line no. 17
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b]
+nmetric is 115451
+line no. 18
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff]
+nmetric is 115919
+line no. 19
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d]
+nmetric is 116424
+line no. 20
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c]
+nmetric is 117038
+line no. 21
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6]
+nmetric is 117718
+line no. 22
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f]
+nmetric is 118463
+line no. 23
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea]
+nmetric is 119341
+line no. 24
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e]
+nmetric is 120424
+line no. 25
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad]
+nmetric is 152618
+line no. 26
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227]
+nmetric is 153877
+line no. 27
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227, [Ljava.lang.String;@2321dba8]
+nmetric is 155497
+line no. 28
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227, [Ljava.lang.String;@2321dba8, [Ljava.lang.String;@3dc049d]
+nmetric is 157437
+line no. 29
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227, [Ljava.lang.String;@2321dba8, [Ljava.lang.String;@3dc049d, [Ljava.lang.String;@61b2e165]
+nmetric is 166678
+line no. 30
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227, [Ljava.lang.String;@2321dba8, [Ljava.lang.String;@3dc049d, [Ljava.lang.String;@61b2e165, [Ljava.lang.String;@26ebdfff]
+nmetric is 168859
+line no. 31
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227, [Ljava.lang.String;@2321dba8, [Ljava.lang.String;@3dc049d, [Ljava.lang.String;@61b2e165, [Ljava.lang.String;@26ebdfff, [Ljava.lang.String;@47bef24f]
+nmetric is 171403
+line no. 32
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227, [Ljava.lang.String;@2321dba8, [Ljava.lang.String;@3dc049d, [Ljava.lang.String;@61b2e165, [Ljava.lang.String;@26ebdfff, [Ljava.lang.String;@47bef24f, [Ljava.lang.String;@49164555]
+nmetric is 174284
+line no. 33
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227, [Ljava.lang.String;@2321dba8, [Ljava.lang.String;@3dc049d, [Ljava.lang.String;@61b2e165, [Ljava.lang.String;@26ebdfff, [Ljava.lang.String;@47bef24f, [Ljava.lang.String;@49164555, [Ljava.lang.String;@5521f4ef]
+nmetric is 177578
+line no. 34
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227, [Ljava.lang.String;@2321dba8, [Ljava.lang.String;@3dc049d, [Ljava.lang.String;@61b2e165, [Ljava.lang.String;@26ebdfff, [Ljava.lang.String;@47bef24f, [Ljava.lang.String;@49164555, [Ljava.lang.String;@5521f4ef, [Ljava.lang.String;@2857a293]
+nmetric is 181267
+line no. 35
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227, [Ljava.lang.String;@2321dba8, [Ljava.lang.String;@3dc049d, [Ljava.lang.String;@61b2e165, [Ljava.lang.String;@26ebdfff, [Ljava.lang.String;@47bef24f, [Ljava.lang.String;@49164555, [Ljava.lang.String;@5521f4ef, [Ljava.lang.String;@2857a293, [Ljava.lang.String;@11727596]
+nmetric is 185318
+line no. 36
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227, [Ljava.lang.String;@2321dba8, [Ljava.lang.String;@3dc049d, [Ljava.lang.String;@61b2e165, [Ljava.lang.String;@26ebdfff, [Ljava.lang.String;@47bef24f, [Ljava.lang.String;@49164555, [Ljava.lang.String;@5521f4ef, [Ljava.lang.String;@2857a293, [Ljava.lang.String;@11727596, [Ljava.lang.String;@7185d3cc]
+nmetric is 227602
+line no. 37
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227, [Ljava.lang.String;@2321dba8, [Ljava.lang.String;@3dc049d, [Ljava.lang.String;@61b2e165, [Ljava.lang.String;@26ebdfff, [Ljava.lang.String;@47bef24f, [Ljava.lang.String;@49164555, [Ljava.lang.String;@5521f4ef, [Ljava.lang.String;@2857a293, [Ljava.lang.String;@11727596, [Ljava.lang.String;@7185d3cc, [Ljava.lang.String;@914304e]
+nmetric is 232360
+line no. 38
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227, [Ljava.lang.String;@2321dba8, [Ljava.lang.String;@3dc049d, [Ljava.lang.String;@61b2e165, [Ljava.lang.String;@26ebdfff, [Ljava.lang.String;@47bef24f, [Ljava.lang.String;@49164555, [Ljava.lang.String;@5521f4ef, [Ljava.lang.String;@2857a293, [Ljava.lang.String;@11727596, [Ljava.lang.String;@7185d3cc, [Ljava.lang.String;@914304e, [Ljava.lang.String;@c6f558a]
+nmetric is 237944
+line no. 39
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227, [Ljava.lang.String;@2321dba8, [Ljava.lang.String;@3dc049d, [Ljava.lang.String;@61b2e165, [Ljava.lang.String;@26ebdfff, [Ljava.lang.String;@47bef24f, [Ljava.lang.String;@49164555, [Ljava.lang.String;@5521f4ef, [Ljava.lang.String;@2857a293, [Ljava.lang.String;@11727596, [Ljava.lang.String;@7185d3cc, [Ljava.lang.String;@914304e, [Ljava.lang.String;@c6f558a, [Ljava.lang.String;@6158dd66]
+nmetric is 244470
+line no. 40
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227, [Ljava.lang.String;@2321dba8, [Ljava.lang.String;@3dc049d, [Ljava.lang.String;@61b2e165, [Ljava.lang.String;@26ebdfff, [Ljava.lang.String;@47bef24f, [Ljava.lang.String;@49164555, [Ljava.lang.String;@5521f4ef, [Ljava.lang.String;@2857a293, [Ljava.lang.String;@11727596, [Ljava.lang.String;@7185d3cc, [Ljava.lang.String;@914304e, [Ljava.lang.String;@c6f558a, [Ljava.lang.String;@6158dd66, [Ljava.lang.String;@112f8578]
+nmetric is 252005
+line no. 41
+primary key matched
+Secondary key matched
+data is 
+[[Ljava.lang.String;@744607b5, [Ljava.lang.String;@21a437b6, [Ljava.lang.String;@24459efb, [Ljava.lang.String;@56c88357, [Ljava.lang.String;@626f144, [Ljava.lang.String;@66a9aa83, [Ljava.lang.String;@cf9b31d, [Ljava.lang.String;@5d5e3b92, [Ljava.lang.String;@55991e21, [Ljava.lang.String;@3789346e, [Ljava.lang.String;@10d13e3e, [Ljava.lang.String;@271ff1b8, [Ljava.lang.String;@22367b19, [Ljava.lang.String;@26cbb7db, [Ljava.lang.String;@8939ec3, [Ljava.lang.String;@139c189b, [Ljava.lang.String;@6d13722b, [Ljava.lang.String;@17ac9cff, [Ljava.lang.String;@4577357d, [Ljava.lang.String;@1558c52c, [Ljava.lang.String;@76f8d6a6, [Ljava.lang.String;@4ad4694f, [Ljava.lang.String;@3f4de7ea, [Ljava.lang.String;@13b4d41e, [Ljava.lang.String;@44d207ad, [Ljava.lang.String;@38f61227, [Ljava.lang.String;@2321dba8, [Ljava.lang.String;@3dc049d, [Ljava.lang.String;@61b2e165, [Ljava.lang.String;@26ebdfff, [Ljava.lang.String;@47bef24f, [Ljava.lang.String;@49164555, [Ljava.lang.String;@5521f4ef, [Ljava.lang.String;@2857a293, [Ljava.lang.String;@11727596, [Ljava.lang.String;@7185d3cc, [Ljava.lang.String;@914304e, [Ljava.lang.String;@c6f558a, [Ljava.lang.String;@6158dd66, [Ljava.lang.String;@112f8578, [Ljava.lang.String;@46e39218]
+nmetric is 257910
+
+and when everything went off....
+
+if data is still there...and sec_key is in continuous_keys
+Entering writeoutput
+299 uniq_prod 9 9069 663336
+299 uniq_prod 8 10473 846696
+299 uniq_prod 7 12343 1097906
+299 uniq_prod 6 14709 1446900
+299 uniq_prod 5 17618 1969436
+299 uniq_prod 4 21429 2774345
+299 uniq_prod 40 426 17003
+299 uniq_prod 39 404 12678
+299 uniq_prod 38 362 10281
+299 uniq_prod 37 369 8073
+299 uniq_prod 36 320 7368
+299 uniq_prod 35 276 7139
+299 uniq_prod 34 305 7507
+299 uniq_prod 33 308 8217
+299 uniq_prod 3 26229 4109950
+299 uniq_prod 32 376 9315
+299 uniq_prod 31 435 10760
+299 uniq_prod 30 468 12262
+299 uniq_prod 29 505 14550
+299 uniq_prod 28 614 16624
+299 uniq_prod 27 680 20013
+299 uniq_prod 26 745 24098
+299 uniq_prod 25 878 28241
+299 uniq_prod 24 1083 35579
+299 uniq_prod 2 32194 6797719
+299 uniq_prod 23 1259 44119
+299 uniq_prod 22 1620 55460
+299 uniq_prod 21 1940 81206
+299 uniq_prod 20 9241 415055
+299 uniq_prod 19 2181 103019
+299 uniq_prod 18 2544 119453
+299 uniq_prod 17 2881 141171
+299 uniq_prod 16 3294 166170
+299 uniq_prod 15 3689 198607
+299 uniq_prod 14 4051 236709
+299 uniq_prod 1 42284 18122814
+299 uniq_prod 13 4758 283075
+299 uniq_prod 12 5584 345471
+299 uniq_prod 11 6526 424696
+299 uniq_prod 10 7535 529107
+299 uniq_prod 0 5905 2008160
+index is 0
+enter get bucket
+heck is de 
+299 uniq_prod 9 9069 663336
+299 uniq_prod 8 10473 846696
+299 uniq_prod 7 12343 1097906
+299 uniq_prod 6 14709 1446900
+299 uniq_prod 5 17618 1969436
+299 uniq_prod 4 21429 2774345
+299 uniq_prod 40 426 17003
+299 uniq_prod 39 404 12678
+299 uniq_prod 38 362 10281
+299 uniq_prod 37 369 8073
+299 uniq_prod 36 320 7368
+299 uniq_prod 35 276 7139
+299 uniq_prod 34 305 7507
+299 uniq_prod 33 308 8217
+299 uniq_prod 3 26229 4109950
+299 uniq_prod 32 376 9315
+299 uniq_prod 31 435 10760
+299 uniq_prod 30 468 12262
+299 uniq_prod 29 505 14550
+299 uniq_prod 28 614 16624
+299 uniq_prod 27 680 20013
+299 uniq_prod 26 745 24098
+299 uniq_prod 25 878 28241
+299 uniq_prod 24 1083 35579
+299 uniq_prod 2 32194 6797719
+299 uniq_prod 23 1259 44119
+299 uniq_prod 22 1620 55460
+299 uniq_prod 21 1940 81206
+299 uniq_prod 20 9241 415055
+299 uniq_prod 19 2181 103019
+299 uniq_prod 18 2544 119453
+299 uniq_prod 17 2881 141171
+299 uniq_prod 16 3294 166170
+299 uniq_prod 15 3689 198607
+299 uniq_prod 14 4051 236709
+299 uniq_prod 1 42284 18122814
+299 uniq_prod 13 4758 283075
+299 uniq_prod 12 5584 345471
+299 uniq_prod 11 6526 424696
+299 uniq_prod 10 7535 529107
+299 uniq_prod 0 5905 2008160
+datatwo is: 
+299 uniq_prod 0 5905 2008160
+299 uniq_prod 1 42284 18122814
+299 uniq_prod 2 32194 6797719
+299 uniq_prod 3 26229 4109950
+299 uniq_prod 4 21429 2774345
+299 uniq_prod 5 17618 1969436
+299 uniq_prod 6 14709 1446900
+299 uniq_prod 7 12343 1097906
+299 uniq_prod 8 10473 846696
+299 uniq_prod 9 9069 663336
+299 uniq_prod 10 7535 529107
+299 uniq_prod 11 6526 424696
+299 uniq_prod 12 5584 345471
+299 uniq_prod 13 4758 283075
+299 uniq_prod 14 4051 236709
+299 uniq_prod 15 3689 198607
+299 uniq_prod 16 3294 166170
+299 uniq_prod 17 2881 141171
+299 uniq_prod 18 2544 119453
+299 uniq_prod 19 2181 103019
+299 uniq_prod 20 9241 415055
+299 uniq_prod 21 1940 81206
+299 uniq_prod 22 1620 55460
+299 uniq_prod 23 1259 44119
+299 uniq_prod 24 1083 35579
+299 uniq_prod 25 878 28241
+299 uniq_prod 26 745 24098
+299 uniq_prod 27 680 20013
+299 uniq_prod 28 614 16624
+299 uniq_prod 29 505 14550
+299 uniq_prod 30 468 12262
+299 uniq_prod 31 435 10760
+299 uniq_prod 32 376 9315
+299 uniq_prod 33 308 8217
+299 uniq_prod 34 305 7507
+299 uniq_prod 35 276 7139
+299 uniq_prod 36 320 7368
+299 uniq_prod 37 369 8073
+299 uniq_prod 38 362 10281
+299 uniq_prod 39 404 12678
+299 uniq_prod 40 426 17003
+data2 is: 
+299 uniq_prod 0 5905 2008160
+299 uniq_prod 1 42284 18122814
+299 uniq_prod 2 32194 6797719
+299 uniq_prod 3 26229 4109950
+299 uniq_prod 4 21429 2774345
+299 uniq_prod 5 17618 1969436
+299 uniq_prod 6 14709 1446900
+299 uniq_prod 7 12343 1097906
+299 uniq_prod 8 10473 846696
+299 uniq_prod 9 9069 663336
+299 uniq_prod 10 7535 529107
+299 uniq_prod 11 6526 424696
+299 uniq_prod 12 5584 345471
+299 uniq_prod 13 4758 283075
+299 uniq_prod 14 4051 236709
+299 uniq_prod 15 3689 198607
+299 uniq_prod 16 3294 166170
+299 uniq_prod 17 2881 141171
+299 uniq_prod 18 2544 119453
+299 uniq_prod 19 2181 103019
+299 uniq_prod 20 9241 415055
+299 uniq_prod 21 1940 81206
+299 uniq_prod 22 1620 55460
+299 uniq_prod 23 1259 44119
+299 uniq_prod 24 1083 35579
+299 uniq_prod 25 878 28241
+299 uniq_prod 26 745 24098
+299 uniq_prod 27 680 20013
+299 uniq_prod 28 614 16624
+299 uniq_prod 29 505 14550
+299 uniq_prod 30 468 12262
+299 uniq_prod 31 435 10760
+299 uniq_prod 32 376 9315
+299 uniq_prod 33 308 8217
+299 uniq_prod 34 305 7507
+299 uniq_prod 35 276 7139
+299 uniq_prod 36 320 7368
+299 uniq_prod 37 369 8073
+299 uniq_prod 38 362 10281
+299 uniq_prod 39 404 12678
+299 uniq_prod 40 426 17003
+rows is: 
+299 uniq_prod 0 5905 2008160
+rows is: 
+299 uniq_prod 1 42284 18122814
+prevs m/nm : 59052008160
+metric + nonmetric : 42284 18122814
+chi num is9857648793314115177402142700
+chi den is35491465273390856152109820
+saada chi square : 277.75
+Lai lwo pvalue piche: 0.0
+rows is: 
+299 uniq_prod 2 32194 6797719
+prevs m/nm : 4818920130974
+metric + nonmetric : 32194 6797719
+chi num is2774747746129633637775653826100
+chi den is298330602939647394142132161
+saada chi square : 9300.92
+Lai lwo pvalue piche: 0.0
+rows is: 
+299 uniq_prod 3 26229 4109950
+prevs m/nm : 321946797719
+metric + nonmetric : 26229 4109950
+chi num is23185732685690038934999844492
+chi den is18002395621749209441150449
+saada chi square : 1287.92
+Lai lwo pvalue piche: 0.0
+rows is: 
+299 uniq_prod 4 21429 2774345
+prevs m/nm : 262294109950
+metric + nonmetric : 21429 2774345
+chi num is1623512020919203280888049825
+chi den is3793994282276163289956060
+saada chi square : 427.92
+Lai lwo pvalue piche: 0.0
+rows is: 
+299 uniq_prod 5 17618 1969436
+prevs m/nm : 214292774345
+metric + nonmetric : 17618 1969436
+chi num is213125271423885741159544368
+chi den is1029020519666374769361772
+saada chi square : 207.11
+Lai lwo pvalue piche: 0.0
+rows is: 
+299 uniq_prod 6 14709 1446900
+prevs m/nm : 176181969436
+metric + nonmetric : 14709 1446900
+chi num is41691510435617597106277488
+chi den is320750143104682902818592
+saada chi square : 129.98
+Lai lwo pvalue piche: 0.0
+rows is: 
+299 uniq_prod 7 12343 1097906
+prevs m/nm : 147091446900
+metric + nonmetric : 12343 1097906
+chi num is7520258676736144019984328
+chi den is111713499875379347075592
+saada chi square : 67.32
+Lai lwo pvalue piche: 0.0
+rows is: 
+299 uniq_prod 8 10473 846696
+prevs m/nm : 123431097906
+metric + nonmetric : 10473 846696
+chi num is2159177229537667638949800
+chi den is42223777376751463977792
+saada chi square : 51.14
+Lai lwo pvalue piche: 0.0
+rows is: 
+299 uniq_prod 9 9069 663336
+prevs m/nm : 10473846696
+metric + nonmetric : 9069 663336
+chi num is818615583259659542697984
+chi den is17007972699802434202080
+saada chi square : 48.13
+Lai lwo pvalue piche: 0.0
+rows is: 
+299 uniq_prod 10 7535 529107
+prevs m/nm : 9069663336
+metric + nonmetric : 7535 529107
+chi num is48248478461848977711063
+chi den is7144403044601682243720
+saada chi square : 6.75
+Lai lwo pvalue piche: 0.00937476968999651
+rows is: 
+299 uniq_prod 11 6526 424696
+prevs m/nm : 7535529107
+metric + nonmetric : 6526 424696
+chi num is61887339888054127972576
+chi den is3103562254308048955092
+saada chi square : 19.94
+Lai lwo pvalue piche: 7.990907918808965E-6
+rows is: 
+299 uniq_prod 12 5584 345471
+prevs m/nm : 14061953803
+metric + nonmetric : 5584 345471
+chi num is289329665721901826186879
+chi den is8672459499529807699600
+saada chi square : 33.36
+Lai lwo pvalue piche: 7.634121890198742E-9
+rows is: 
+299 uniq_prod 13 4758 283075
+prevs m/nm : 5584345471
+metric + nonmetric : 4758 283075
+chi num is2540596330996056593312
+chi den is656836604842826442580
+saada chi square : 3.87
+Lai lwo pvalue piche: 0.04915652179380259
+rows is: 
+299 uniq_prod 14 4051 236709
+prevs m/nm : 10342628546
+metric + nonmetric : 4051 236709
+chi num is8481856560792350410752
+chi den is1915598589836706299200
+saada chi square : 4.43
+Lai lwo pvalue piche: 0.03531250847812506
+rows is: 
+299 uniq_prod 15 3689 198607
+prevs m/nm : 4051236709
+metric + nonmetric : 3689 198607
+chi num is2088807426725626556416
+chi den is164103264593070566400
+saada chi square : 12.73
+Lai lwo pvalue piche: 3.598366491096572E-4
+rows is: 
+299 uniq_prod 16 3294 166170
+prevs m/nm : 7740435316
+metric + nonmetric : 3294 166170
+chi num is13375894083981369016320
+chi den is498304235254233263616
+saada chi square : 26.84
+Lai lwo pvalue piche: 2.210114381506756E-7
+rows is: 
+299 uniq_prod 17 2881 141171
+prevs m/nm : 3294166170
+metric + nonmetric : 2881 141171
+chi num is59002812193502048256
+chi den is46329136688011226400
+saada chi square : 1.27
+Lai lwo pvalue piche: 0.2597666798573255
+rows is: 
+299 uniq_prod 18 2544 119453
+prevs m/nm : 6175307341
+metric + nonmetric : 2544 119453
+chi num is852886133129065099233
+chi den is142329146071103778472
+saada chi square : 5.99
+Lai lwo pvalue piche: 0.014387201346011014
+rows is: 
+299 uniq_prod 19 2181 103019
+prevs m/nm : 8719426794
+metric + nonmetric : 2181 103019
+chi num is575178956203520332817
+chi den is264585458138440920000
+saada chi square : 2.17
+Lai lwo pvalue piche: 0.14072623381129779
+rows is: 
+299 uniq_prod 20 9241 415055
+prevs m/nm : 10900529813
+metric + nonmetric : 9241 415055
+chi num is133471764785600348760401
+chi den is4366042099324062990624
+saada chi square : 30.57
+Lai lwo pvalue piche: 3.226487499397024E-8
+rows is: 
+299 uniq_prod 21 1940 81206
+prevs m/nm : 9241415055
+metric + nonmetric : 1940 81206
+chi num is1522870708773353252872
+chi den is195749694210050071056
+saada chi square : 7.78
+Lai lwo pvalue piche: 0.005282780235322915
+rows is: 
+299 uniq_prod 22 1620 55460
+prevs m/nm : 194081206
+metric + nonmetric : 1620 55460
+chi num is80510036597424182400
+chi den is2309063130665132800
+saada chi square : 34.87
+Lai lwo pvalue piche: 3.5571985357307767E-9
+rows is: 
+299 uniq_prod 23 1259 44119
+prevs m/nm : 3560136666
+metric + nonmetric : 1259 44119
+chi num is41754519178236702864
+chi den is5543616981529972620
+saada chi square : 7.53
+Lai lwo pvalue piche: 0.0060679917835848585
+rows is: 
+299 uniq_prod 24 1083 35579
+prevs m/nm : 4819180785
+metric + nonmetric : 1083 35579
+chi num is131623699468754194856
+chi den is8689358023532382144
+saada chi square : 15.15
+Lai lwo pvalue piche: 9.929778103023867E-5
+rows is: 
+299 uniq_prod 25 878 28241
+prevs m/nm : 5902216364
+metric + nonmetric : 878 28241
+chi num is136348032019882378500
+chi den is10733577944177622600
+saada chi square : 12.7
+Lai lwo pvalue piche: 3.6565571046820455E-4
+rows is: 
+299 uniq_prod 26 745 24098
+prevs m/nm : 6780244605
+metric + nonmetric : 745 24098
+chi num is98111340091630779300
+chi den is12627646593021266625
+saada chi square : 7.77
+Lai lwo pvalue piche: 0.005312105435868797
+rows is: 
+299 uniq_prod 27 680 20013
+prevs m/nm : 7525268703
+metric + nonmetric : 680 20013
+chi num is306335833910208773225
+chi den is13540683727148739120
+saada chi square : 22.62
+Lai lwo pvalue piche: 1.9740381249633288E-6
+rows is: 
+299 uniq_prod 28 614 16624
+prevs m/nm : 8205288716
+metric + nonmetric : 614 16624
+chi num is524801411883045738944
+chi den is13782589926534145080
+saada chi square : 38.08
+Lai lwo pvalue piche: 0.0
+rows is: 
+299 uniq_prod 29 505 14550
+prevs m/nm : 61416624
+metric + nonmetric : 505 14550
+chi num is9367179370805200
+chi den is9052952753241540
+saada chi square : 1.03
+Lai lwo pvalue piche: 0.31015866747981014
+rows is: 
+299 uniq_prod 30 468 12262
+prevs m/nm : 111931174
+metric + nonmetric : 468 12262
+chi num is33941264278415868
+chi den is28337631433257480
+saada chi square : 1.2
+Lai lwo pvalue piche: 0.27332167818476993
+rows is: 
+299 uniq_prod 31 435 10760
+prevs m/nm : 158743436
+metric + nonmetric : 435 10760
+chi num is185917858095088800
+chi den is55234053094375320
+saada chi square : 3.37
+Lai lwo pvalue piche: 0.06639375514113921
+rows is: 
+299 uniq_prod 32 376 9315
+prevs m/nm : 202254196
+metric + nonmetric : 376 9315
+chi num is156871785879197204
+chi den is82974016696427164
+saada chi square : 1.89
+Lai lwo pvalue piche: 0.1692019217890316
+rows is: 
+299 uniq_prod 33 308 8217
+prevs m/nm : 239863511
+metric + nonmetric : 308 8217
+chi num is1521632563298056
+chi den is109057521595624800
+saada chi square : 0.01
+Lai lwo pvalue piche: 0.9203443254591628
+rows is: 
+299 uniq_prod 34 305 7507
+prevs m/nm : 270671728
+metric + nonmetric : 305 7507
+chi num is200949625061498584
+chi den is138727132831876680
+saada chi square : 1.45
+Lai lwo pvalue piche: 0.22852795265113712
+rows is: 
+299 uniq_prod 35 276 7139
+prevs m/nm : 301179235
+metric + nonmetric : 276 7139
+chi num is12496594724434821
+chi den is173144490676672420
+saada chi square : 0.07
+Lai lwo pvalue piche: 0.7913367800625621
+rows is: 
+299 uniq_prod 36 320 7368
+prevs m/nm : 328786374
+metric + nonmetric : 320 7368
+chi num is1139341436466653504
+chi den is233075868022160592
+saada chi square : 4.89
+Lai lwo pvalue piche: 0.027012687893952725
+rows is: 
+299 uniq_prod 37 369 8073
+prevs m/nm : 360793742
+metric + nonmetric : 369 8073
+chi num is3167083150535759679
+chi den is332686351163441520
+saada chi square : 9.52
+Lai lwo pvalue piche: 0.0020324449516228027
+rows is: 
+299 uniq_prod 38 362 10281
+prevs m/nm : 3976101815
+metric + nonmetric : 362 10281
+chi num is1881831584782342984
+chi den is547510494278994624
+saada chi square : 3.44
+Lai lwo pvalue piche: 0.06363569245564726
+rows is: 
+299 uniq_prod 39 404 12678
+prevs m/nm : 4338112096
+metric + nonmetric : 404 12678
+chi num is12212255290575710400
+chi den is901238238191057104
+saada chi square : 13.55
+Lai lwo pvalue piche: 2.3229085244325098E-4
+rows is: 
+299 uniq_prod 40 426 17003
+prevs m/nm : 4742124774
+metric + nonmetric : 426 17003
+chi num is110921177587448447780
+chi den is1653956870437111104
+saada chi square : 67.06
+Lai lwo pvalue piche: 0.0
+buckettracker must match!
+0
+{content=[0.0, 1.0], nometric=[2.0130974E7], metric=[48189.0]}
+1
+{content=[2.0], nometric=[6797719.0], metric=[32194.0]}
+2
+{content=[3.0], nometric=[4109950.0], metric=[26229.0]}
+3
+{content=[4.0], nometric=[2774345.0], metric=[21429.0]}
+4
+{content=[5.0], nometric=[1969436.0], metric=[17618.0]}
+5
+{content=[6.0], nometric=[1446900.0], metric=[14709.0]}
+6
+{content=[7.0], nometric=[1097906.0], metric=[12343.0]}
+7
+{content=[8.0], nometric=[846696.0], metric=[10473.0]}
+8
+{content=[9.0], nometric=[663336.0], metric=[9069.0]}
+9
+{content=[10.0, 11.0], nometric=[953803.0], metric=[14061.0]}
+10
+{content=[12.0, 13.0], nometric=[628546.0], metric=[10342.0]}
+11
+{content=[14.0, 15.0], nometric=[435316.0], metric=[7740.0]}
+12
+{content=[16.0, 17.0, 18.0, 19.0], nometric=[529813.0], metric=[10900.0]}
+13
+{content=[20.0], nometric=[415055.0], metric=[9241.0]}
+14
+{content=[21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0], nometric=[288716.0], metric=[8205.0]}
+15
+{content=[28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0], nometric=[141777.0], metric=[5168.0]}
+dat_one is: 
+299 uniq_prod 0 5905 2008160bucket_0
+299 uniq_prod 1 42284 18122814bucket_0
+299 uniq_prod 2 32194 6797719bucket_1
+299 uniq_prod 3 26229 4109950bucket_2
+299 uniq_prod 4 21429 2774345bucket_3
+299 uniq_prod 5 17618 1969436bucket_4
+299 uniq_prod 6 14709 1446900bucket_5
+299 uniq_prod 7 12343 1097906bucket_6
+299 uniq_prod 8 10473 846696bucket_7
+299 uniq_prod 9 9069 663336bucket_8
+299 uniq_prod 10 7535 529107bucket_9
+299 uniq_prod 11 6526 424696bucket_9
+299 uniq_prod 12 5584 345471bucket_10
+299 uniq_prod 13 4758 283075bucket_10
+299 uniq_prod 14 4051 236709bucket_11
+299 uniq_prod 15 3689 198607bucket_11
+299 uniq_prod 16 3294 166170bucket_12
+299 uniq_prod 17 2881 141171bucket_12
+299 uniq_prod 18 2544 119453bucket_12
+299 uniq_prod 19 2181 103019bucket_12
+299 uniq_prod 20 9241 415055bucket_13
+299 uniq_prod 21 1940 81206bucket_14
+299 uniq_prod 22 1620 55460bucket_14
+299 uniq_prod 23 1259 44119bucket_14
+299 uniq_prod 24 1083 35579bucket_14
+299 uniq_prod 25 878 28241bucket_14
+299 uniq_prod 26 745 24098bucket_14
+299 uniq_prod 27 680 20013bucket_14
+299 uniq_prod 28 614 16624bucket_15
+299 uniq_prod 29 505 14550bucket_15
+299 uniq_prod 30 468 12262bucket_15
+299 uniq_prod 31 435 10760bucket_15
+299 uniq_prod 32 376 9315bucket_15
+299 uniq_prod 33 308 8217bucket_15
+299 uniq_prod 34 305 7507bucket_15
+299 uniq_prod 35 276 7139bucket_15
+299 uniq_prod 36 320 7368bucket_15
+299 uniq_prod 37 369 8073bucket_15
+299 uniq_prod 38 362 10281bucket_15
+299 uniq_prod 39 404 12678bucket_15
+299 uniq_prod 40 426 17003bucket_15
+Printing bucket tracker: 
+0
+{content=[0.0, 1.0], nometric=[2.0130974E7], metric=[48189.0]}
+1
+{content=[2.0], nometric=[6797719.0], metric=[32194.0]}
+2
+{content=[3.0], nometric=[4109950.0], metric=[26229.0]}
+3
+{content=[4.0], nometric=[2774345.0], metric=[21429.0]}
+4
+{content=[5.0], nometric=[1969436.0], metric=[17618.0]}
+5
+{content=[6.0], nometric=[1446900.0], metric=[14709.0]}
+6
+{content=[7.0], nometric=[1097906.0], metric=[12343.0]}
+7
+{content=[8.0], nometric=[846696.0], metric=[10473.0]}
+8
+{content=[9.0], nometric=[663336.0], metric=[9069.0]}
+9
+{content=[10.0, 11.0], nometric=[953803.0], metric=[14061.0]}
+10
+{content=[12.0, 13.0], nometric=[628546.0], metric=[10342.0]}
+11
+{content=[14.0, 15.0], nometric=[435316.0], metric=[7740.0]}
+12
+{content=[16.0, 17.0, 18.0, 19.0], nometric=[529813.0], metric=[10900.0]}
+13
+{content=[20.0], nometric=[415055.0], metric=[9241.0]}
+14
+{content=[21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0], nometric=[288716.0], metric=[8205.0]}
+15
+{content=[28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0], nometric=[141777.0], metric=[5168.0]}
+[OUTPUT]the output is: 299\tuniq_prod\t0\t[2.0130974E7]\t[48189.0]50.00.01.0
+[OUTPUT]the output is: 299\tuniq_prod\t1\t[6797719.0]\t[32194.0]50.02.02.0
+[OUTPUT]the output is: 299\tuniq_prod\t10\t[628546.0]\t[10342.0]50.012.013.0
+[OUTPUT]the output is: 299\tuniq_prod\t11\t[435316.0]\t[7740.0]50.014.015.0
+[OUTPUT]the output is: 299\tuniq_prod\t12\t[529813.0]\t[10900.0]50.016.019.0
+[OUTPUT]the output is: 299\tuniq_prod\t13\t[415055.0]\t[9241.0]50.020.020.0
+[OUTPUT]the output is: 299\tuniq_prod\t14\t[430493.0]\t[13373.0]50.021.027.0
+[OUTPUT]the output is: 299\tuniq_prod\t2\t[4109950.0]\t[26229.0]50.03.03.0
+[OUTPUT]the output is: 299\tuniq_prod\t3\t[2774345.0]\t[21429.0]50.04.04.0
+[OUTPUT]the output is: 299\tuniq_prod\t4\t[1969436.0]\t[17618.0]50.05.05.0
+[OUTPUT]the output is: 299\tuniq_prod\t5\t[1446900.0]\t[14709.0]50.06.06.0
+[OUTPUT]the output is: 299\tuniq_prod\t6\t[1097906.0]\t[12343.0]50.07.07.0
+[OUTPUT]the output is: 299\tuniq_prod\t7\t[846696.0]\t[10473.0]50.08.08.0
+[OUTPUT]the output is: 299\tuniq_prod\t8\t[663336.0]\t[9069.0]50.09.09.0
+[OUTPUT]the output is: 299\tuniq_prod\t9\t[953803.0]\t[14061.0]50.010.011.0
+For Primary Key: 299
+FINALOUTPUT{uniq_prod=[1.0, 2.0, 13.0, 15.0, 19.0, 20.0, 27.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 11.0]}

@@ -1,0 +1,780 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.zip.GZIPInputStream;
+//read
+//write
+//read gz's
+
+
+public class MainDriverCVR {//Applies to both CVR and CTR
+	// used for bucket index
+	static int index = 0;
+	// constants
+	final double alpha_def = 0.05;
+	static double alpha  = 0.05;
+	// used for primary and secondary grouping keys : advid / other_attrib
+	static String primaryKey = "default";
+	static String secondaryKey = "default";
+	// constants
+	final int nmin = 5;
+	final static int nmax = 30;
+	final int minMetric = 30;
+	static int nMetric = 0;
+	final static double minProp = 0.03;
+	private static final int SENTINEL = -999;// assign this to any variables to be updated
+	private static final double I_SQRT_PI = (1 / Math.sqrt(Math.PI));//chi-square vars
+	private static final double LOG_SQRT_PI = Math.log(Math.sqrt(Math.PI));//chi-square vars
+	private static final double MAX_X = 20;//chi-square vars
+
+	static ArrayList<String[]> data = new ArrayList<String[] >();//accumulates all the rows of <pkey , skey>
+	static ArrayList<String[]> dataone = new ArrayList<String[] >(); // an auxiliary datastructure for same purpose
+
+	static ArrayList<BucketTracker> bucketTracker = new ArrayList<BucketTracker>();
+	static HashMap<String, ArrayList<Double>> bucketJson = new HashMap<String,ArrayList<Double>>();//global bucketJson
+
+	static HashMap<String, ArrayList<Double>> finalJson = new HashMap<String,ArrayList<Double>>();//global bucketJson
+
+
+	static ArrayList<String> continuousKeys = new ArrayList<String>();//global continuous keys
+
+	static ArrayList<Summary> summary = new ArrayList<Summary>();//global summary arraylist
+	private static String prnt;//supposedly an argument - '0' or '1' -> argv[1]
+	//private static PrintWriter outwriter = new PrintWriter("output.txt"); //(new FileWriter(new File("output.txt")));
+	static FileWriter outwriter ;//= new PrintWriter("output.txt");
+
+	static String advFolder = "./gzCTR";//folder to process in
+	static File folder = new File(advFolder);
+	static File[] listOfFiles = folder.listFiles();//list of files in there
+
+	public static void main(String[] args) {
+		try {
+			outwriter = new FileWriter("outputCTRint.txt");//an intermediate file generated
+		} catch (FileNotFoundException e1) {
+			System.out.println("[EXCEPTION]File could not be opened to write to");
+		} catch (IOException e) {
+			System.out.println("[EXCEPTION]File could not be I/O'ed to");
+		}
+
+		prnt = "1";//args[1]; // still couldn't find a use case for its utility
+		// reading the "variableList.ini" file
+		GZIPInputStream gzip = null;
+		BufferedReader varListBr = null;//the bufferedreader for varlist.ini file
+		BufferedReader outputBr = null;// read the output tsv file
+		HashMap<String, ArrayList<String>> keyvalsMap = new HashMap<String, ArrayList<String>>();//key-vals - basically our config
+		for(int x = 0; x < listOfFiles.length; x++)//reading all the gz's in
+		{
+			if (listOfFiles[x].isFile()) {
+				try {
+					gzip = new GZIPInputStream(new FileInputStream(listOfFiles[x].getAbsolutePath()));
+					varListBr = new BufferedReader(new FileReader("variableList.ini"));//read ini file
+					String varline;
+					int line = 0;
+					boolean varlistHeader = false;//[varlist]
+					while ((varline = varListBr.readLine()) != null) {
+						line++;
+						if(varlistHeader == false)
+						{
+							varlistHeader = true;//[varlist] has been read now
+						}
+						else
+						{
+							String[] keyval = varline.split("=");//split string
+							String key = keyval[0];//key
+							String value = keyval[1];//value
+							String[] values = value.split(",");//values
+							ArrayList<String> valuesList = new ArrayList<String>(Arrays.asList(values));//values as list
+							keyvalsMap.put(key, valuesList);//prepare map instead of jsonarray
+						}
+					}
+					varListBr.close();//not needed anymore
+					ConfigDict configDict = new ConfigDict("varlist",keyvalsMap);//creating configdict - varlist + map
+					ArrayList<String> continuousCTR = configDict.keyvalsMap.get("continuous_ctr");//contCTR keys
+					ArrayList<String> continuousCVR = configDict.keyvalsMap.get("continuous_cvr");//contCVR keys
+					ArrayList<String> continuousBICS_CTR = configDict.keyvalsMap.get("continuous_bics_ctr");//contCTR keys
+					continuousKeys = new ArrayList<String>();//continuous keys
+					continuousKeys.addAll(continuousCTR);
+					continuousKeys.addAll(continuousCVR);
+					continuousKeys.addAll(continuousBICS_CTR);//the global var now has all the continuous keys
+					outputBr = new BufferedReader(new InputStreamReader(gzip));//read the pig script(inter-mediate) output
+					String outline;//reading each line of the output.tsv - pkey | skey | value | click | nonclick
+					while ((outline = outputBr.readLine()) != null) {
+						String[] outs = new String[5];
+						outs = outline.split("\t");//string split the row
+
+						String pkey = outs[0]; // hard-coded 0 as pkey col
+						String skey = outs[1];// hard-coded 1 as skey col
+						double value = Double.parseDouble(outs[2]);// hard-coded 2 as value row
+						int clicks = Integer.parseInt(outs[3]);//hard-coded 3 as clk row
+						int nonClicks = Integer.parseInt(outs[4]);//hard-coded 4 as nonclk row
+						if(primaryKey.equalsIgnoreCase(pkey))//1
+						{
+							if(!secondaryKey.equalsIgnoreCase(skey))//1.1
+							{
+								if(find(secondaryKey,continuousKeys))//1.1.1
+								{
+									writeOutput();// the main thing !
+								}
+								//1.1.1 , 1.1.2
+								ArrayList<String[]> data = new ArrayList<String[]>();// re-initialise the data global arraylist // [CHANGE]
+								nMetric = 0; // re-init nMetric
+								secondaryKey = skey;//update secondarykey as skey
+								data.add(outs);//we just add the line as - is // add string[] of line to data
+								nMetric += clicks;//add to nMetric the click
+							}
+							else//1.2
+							{
+								data.add(outs);//add string[] of the line to data
+								nMetric += clicks;//incr the nMetric
+							}
+						}
+						else//2
+						{
+							if(find(secondaryKey,continuousKeys))//2.1
+							{
+								writeOutput();
+							}
+							//2.1 , 2.2
+							data = new ArrayList<String[]>();//re-initialize [CHANGE]
+							nMetric = 0;
+							data.add(outs);
+							nMetric += Integer.parseInt(outs[3]);//adding clicks basically
+							primaryKey = pkey;//update primaryKey
+							secondaryKey = skey;//update secondaryKey
+						}
+					}// done with all the rows in the output.tsv file
+					//0th
+					if(data.size() > 0 && find(secondaryKey,continuousKeys))//0.1
+					{
+						writeOutput();
+					}
+					//0.1 , 0.2
+					//sanity-check !
+					for (Entry<String, ArrayList<Double>> entry : bucketJson.entrySet())
+					{
+						if(entry.getValue().size() == 1)
+						{
+							bucketJson.remove(entry.getKey());
+						}
+					}
+					printBucketJson();//redundant - vestigial function !
+					gzip.close();
+				} catch (FileNotFoundException e) {
+					System.out.println("[EXCEPTION]Couldn't find the \"variableList.ini\" file or \"output.gz\" file");
+				} catch (IOException e) {
+					System.out.println("[EXCEPTION]Couldn't read the \"variableList.ini\" file or \"output.gz\" file");
+				}
+			}
+		}
+		try {
+			outwriter.close();
+		} catch (IOException e) {
+			System.out.println("[EXCEPTION]Couldn't close the writer\n");
+			e.printStackTrace();
+		}
+		// all the below is intended to copy back the intermediate output file into the reqd output
+		BufferedReader br = null;
+		HashMap<String, ArrayList<String>> hmm = new HashMap<String,ArrayList<String>>();
+		try {
+
+			String sCurrentLine;
+
+			br = new BufferedReader(new FileReader("outputCTRint.txt"));
+
+			while ((sCurrentLine = br.readLine()) != null) {
+				String[] st = sCurrentLine.split("=");
+				if(hmm.containsKey(st[0]))
+				{
+					ArrayList<String> bnew = hmm.get(st[0]);
+					bnew.add(st[1]);
+				}
+				else
+				{
+					ArrayList<String> bnew = new ArrayList<String>();
+					bnew.add(st[1]);
+					hmm.put(st[0], bnew);
+				}
+
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (br != null)br.close();
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+		}
+
+		try {
+
+
+			File file = new File("outputCTR.txt");
+
+			if (!file.exists()) {
+				file.createNewFile();
+			}
+
+			FileWriter fw = new FileWriter(file.getAbsoluteFile());
+			BufferedWriter bw = new BufferedWriter(fw);
+			for(Map.Entry<String, ArrayList<String>> e : hmm.entrySet())
+			{
+				bw.write(e.getKey());
+				bw.write("=");
+				for(String ss : e.getValue())
+				{
+					bw.write(ss);
+				}
+				bw.write("\n");
+			}
+			bw.close();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static boolean find(String secondaryKey2,
+			ArrayList<String> continuousKeys) {//just a find/search function
+		for(String ck : continuousKeys)
+		{
+			if(ck.equalsIgnoreCase(secondaryKey2))
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private static void writeOutput() {//the main function for bucketization
+		// sanity-check
+		if(data.size() == 0)
+		{
+			System.out.println("[ERROR]The data length was ZERO.");
+			return;
+		}
+		for(String[] ts : data)
+		{
+		}
+
+		ArrayList<String[]> clkdata = new ArrayList<String[]>(data);//copy of the <pkey,skey>
+		bucketTracker = getBucket(clkdata,"click");//update dataone here too ! // didnt' explicitly send dat_click in here
+
+		summary = getSummary(dataone);//not needed at all !! - vestigial funcxion
+		boolean checkFlag = checkBin(summary);
+		int count = 0;
+
+		if(!checkFlag)//need to get a flag
+		{
+			while(!checkFlag)//leap of faith
+			{
+				count += 1;
+				index = 0;
+				bucketTracker = getBucket(data, "click");
+				summary = new ArrayList<Summary>();
+				summary = getSummary(dataone);
+				checkFlag = checkBin(summary);
+			}
+		}
+		if(bucketTracker.size() > 1)
+		{
+			bucketTracker = checkForLastBucket(bucketTracker);//basically the last value goes as final bucket rule
+		}
+		ArrayList<String> indexes = getKeys(bucketTracker);//sorted keys
+		HashMap<String, ArrayList<Double>> newJson = new HashMap<String,ArrayList<Double>>();
+		for(String indstr : indexes)
+		{
+			if(prnt.equalsIgnoreCase("1"))
+			{
+				printDaOne(dataone.get(0),Integer.parseInt(indstr),bucketTracker);
+			}
+			double maxval = max(bucketTracker.get(Integer.parseInt(indstr)).colvalsMap.get("content"));
+			if(!newJson.containsKey(dataone.get(0)[1]))
+			{
+				ArrayList<Double> values = new ArrayList<Double>();
+				values.add(maxval);
+				newJson.put(getSecKey(dataone.get(0)), values);
+			}
+			else
+			{
+				ArrayList<Double> values = newJson.get(getSecKey(dataone.get(0)));
+				values.add(maxval);
+				newJson.put(getSecKey(dataone.get(0)), values);
+			}
+
+		}
+		finalJson = new HashMap<String,ArrayList<Double>>();
+		for(Map.Entry<String, ArrayList<Double>> e : newJson.entrySet())
+		{
+			if(!finalJson.containsKey(e.getKey()))
+			{
+				ArrayList<Double> value = new ArrayList<Double>(e.getValue());
+				finalJson.put(e.getKey(), value);
+			}
+			else
+			{
+				ArrayList<Double> new1 = e.getValue();
+				ArrayList<Double> new2 = new ArrayList<Double>(finalJson.get(e.getKey()));
+				ArrayList<Double> temp = new ArrayList<Double>();
+				temp.addAll(new1);
+				temp.addAll(new2);
+				Collections.sort(temp);
+				finalJson.put(e.getKey(), temp);
+			}
+		}
+		bucketJson = new HashMap<String, ArrayList<Double>>(newJson);
+		index = 0;
+		data = new ArrayList<String[] >();
+		for(Map.Entry<String, ArrayList<Double>> e : newJson.entrySet())
+		{
+			if(!finalJson.containsKey(e.getKey()))
+			{
+				finalJson.put(e.getKey(),e.getValue());
+			}
+			else
+			{
+				ArrayList<Double> prev = finalJson.get(e.getKey());
+				ArrayList<Double> newval = new ArrayList<Double>();
+				newval.addAll(prev);
+				newval.addAll(e.getValue());
+				Collections.sort(newval);
+			}
+		}
+		String pstr = primaryKey + "=";
+		String sstr = "";
+		String midstr = "";
+		for(Map.Entry<String, ArrayList<Double>> e : finalJson.entrySet())
+		{
+			midstr = e.getKey()+":";
+			Collections.sort(e.getValue());
+			for(double d : e.getValue())
+			{
+				sstr+= Double.toString(d)+",";
+			}
+			sstr = sstr.substring(0, sstr.length()-1);
+			sstr += ";";
+		}
+		String finalStr = pstr+midstr+sstr+"\n";
+		try {
+			outwriter.write(finalStr);
+		} catch (IOException e1) {
+			System.out.println("[EXCEPTION] Couldn't write to the file");
+		}
+
+
+	}
+
+
+
+
+	//	private static Double maxContent(ArrayList<Double> arrayList) {
+	//		double max = 0;
+	//		for(double d : arrayList)
+	//		{
+	//			if(d > max)
+	//			{
+	//				max = d;
+	//			}
+	//		}
+	//		return max;
+	//	}
+
+	private static String getSecKey(String[] cols) {//get the sec-key column
+		return cols[1];
+	}
+
+	private static void printDaOne(String[] strings, int index2,
+			ArrayList<BucketTracker> bucketTracker2) {//for printing the output rows - ones whose values qualify as buckets
+		double met = (bucketTracker.get(index2).colvalsMap.get("metric").get(0));
+		double nomet = (bucketTracker.get(index2).colvalsMap.get("metric").get(0));
+		String prntstr = strings[0] +"\\t"+ strings[1] +"\\t"+ index2 +"\\t"+ bucketTracker2.get(index2).colvalsMap.get("nometric")+"\\t" + bucketTracker2.get(index2).colvalsMap.get("metric") + 100*met/(met + nomet) + min(bucketTracker2.get(index2).colvalsMap.get("content")) + max(bucketTracker2.get(index2).colvalsMap.get("content"));
+		System.out.println("[OUTPUT]the output is: " + prntstr);
+		if(!bucketJson.containsKey(dataone.get(0)[1]))
+		{
+
+			ArrayList<Double> vals = new ArrayList<Double>();
+			vals.add(Double.parseDouble(dataone.get(0)[2]));
+			bucketJson.put(dataone.get(0)[1],vals);
+		}
+		else
+		{
+			ArrayList<Double> vals = bucketJson.get(dataone.get(0)[1]);
+			vals.addAll(bucketTracker2.get(index2).colvalsMap.get("content"));
+			bucketJson.put(dataone.get(0)[1], vals);
+		}
+		index = 0;
+		data = new ArrayList<String[]>();
+
+	}
+
+	private static double max(ArrayList<Double> arrayList) {// returns max :)
+		Collections.sort(arrayList);
+		return arrayList.get(arrayList.size() - 1);
+	}
+
+	private static double min(ArrayList<Double> arrayList) {//returns min :)
+		Collections.sort(arrayList);
+		return arrayList.get(0);
+	}
+
+	private static ArrayList<String> getKeys(ArrayList<BucketTracker> bucketTracker2) {//sort funxion
+		ArrayList<String> keys = new ArrayList<String>();
+		for(BucketTracker bt : bucketTracker2)
+		{
+			keys.add(bt.bucketno);
+		}
+		Collections.sort(keys);
+		return keys;
+	}
+
+	private static ArrayList<BucketTracker> checkForLastBucket(
+			ArrayList<BucketTracker> bucketTracker2) {
+		Collections.sort(bucketTracker2, new BTComparator());
+		int last = bucketTracker2.size() - 1;
+		if(bucketTracker2.get(last).colvalsMap.get("metric").get(0) <= nMetric*minProp)
+		{
+			int lastIndex = Integer.parseInt(bucketTracker2.get(last).bucketno);
+			int prevIndex = Integer.parseInt(bucketTracker2.get(last-1).bucketno);
+			double met = bucketTracker2.get(prevIndex).colvalsMap.get("metric").get(0) + bucketTracker2.get(lastIndex).colvalsMap.get("metric").get(0);
+			double nomet = bucketTracker2.get(prevIndex).colvalsMap.get("nometric").get(0) + bucketTracker2.get(lastIndex).colvalsMap.get("nometric").get(0);
+			bucketTracker2.get(prevIndex).colvalsMap.get("metric").set(0, met);
+			bucketTracker2.get(prevIndex).colvalsMap.get("nometric").set(0, nomet);
+			bucketTracker2.remove(lastIndex);
+		}
+		return bucketTracker2;
+	}
+
+	private static ArrayList<Summary> getSummary(ArrayList<String[]> dataone2) {//funxion to return summary - summary means summary
+		ArrayList<Summary> out = new ArrayList<Summary>();
+		if(dataone2.size() == 0)
+		{
+			return out;
+		}
+		for(String[] row : dataone2)
+		{
+			if(!findInSummary(row[row.length-1],out))
+			{
+				HashMap<String, String> map = new HashMap<String,String>();
+				map.put("click", "0");
+				map.put("noclick","0");
+				map.put("ctr","0");
+				map.put("vals","0");
+				Summary smry = new Summary(row[row.length-1],map);
+				out.add(smry);
+			}
+			for(int i = 0; i < out.size() ; i++)
+			{
+				if(out.get(i).bucketName.equalsIgnoreCase(row[row.length-1]))
+				{
+					int clk = Integer.parseInt(out.get(i).keyvalsMap.get("click"));
+					int noclick = Integer.parseInt(out.get(i).keyvalsMap.get("noclick"));
+					int vals = Integer.parseInt(out.get(i).keyvalsMap.get("vals"));
+					out.get(i).keyvalsMap.put("click", Integer.toString(clk + Integer.parseInt(row[3])));
+					out.get(i).keyvalsMap.put("noclick", Integer.toString(noclick + Integer.parseInt(row[4])));
+					out.get(i).keyvalsMap.put("vals", Integer.toString(vals+1));
+				}
+			}
+		}
+		for(int i = 0 ; i < out.size() ; i++)
+		{
+			int clk = Integer.parseInt(out.get(i).keyvalsMap.get("click"));
+			int noclk = Integer.parseInt(out.get(i).keyvalsMap.get("noclick"));
+			double val = (100*clk)/((double)clk + (double)noclk);
+			val = (double)Math.round(val * 100) / 100;
+			String sval = Double.toString(val);
+			out.get(i).keyvalsMap.put("ctr", sval);
+			out.get(i).keyvalsMap.put("primary_key", data.get(0)[0]);
+			out.get(i).keyvalsMap.put("secondary_key", data.get(0)[1]);
+		}
+		return out;
+	}
+
+	private static boolean findInSummary(String string, ArrayList<Summary> out) {//simple search utility
+		for(Summary smry : out)
+		{
+			if(smry.bucketName.equalsIgnoreCase(string))
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private static boolean checkBin(ArrayList<Summary> summary2) {// returns a flag based on a comparison
+		showStatus(summary2);
+		int nbins = summary2.size();
+		int vals = 0;
+
+		for(Summary smry : summary2)
+		{
+			vals += Integer.parseInt(smry.keyvalsMap.get("vals"));
+		}
+		int nvals = vals;
+		if(nvals < 10)
+		{
+			return true;
+		}
+		if(nbins > nmax && alpha >  0.0000000001)
+		{
+			alpha = Math.max(0.00000000001,alpha/10);
+			return false;
+		}
+		else return true;
+	}
+
+	private static void showStatus(ArrayList<Summary> summary2) {//why do we even need this ?!?
+		int nbins = summary2.size();
+		int vals = 0;
+		for(Summary smry : summary2)
+		{
+			vals += Integer.parseInt(smry.keyvalsMap.get("vals"));
+		}
+		int nvals = vals;
+	}
+
+	private static ArrayList<BucketTracker> getBucket(ArrayList<String[]> data2,
+			String string) {// if at all the algo fails to match , the reason'd be that I did not supply dat_click explicitly
+		// this function does the comparisons with up-rows using chisquare probabilities
+		
+		dataone = new ArrayList<String[] >();
+		ArrayList<String[] > datatwo  = new ArrayList<String[] >();
+		if(find(getSecKey(data2.get(0)), continuousKeys))
+		{
+			for(String[] rows : data2)
+			{
+				if(Double.parseDouble(rows[2]) == 0.0)
+				{
+					rows[2] = "0";
+				}
+				if(rows[2] == "")
+				{
+					rows[2] = "-1000";
+				}
+				datatwo.add(rows);
+			}
+			data2 = new ArrayList<String[]>(datatwosort(datatwo));
+		}
+		else
+		{
+			data2 = new ArrayList<String[]>(datatwo);
+			Collections.sort(data2,new ClickComparator());
+		}
+		bucketTracker = new ArrayList<BucketTracker>();
+		int old_metric = SENTINEL;
+		int old_nometric = SENTINEL;
+
+		int metric = SENTINEL;
+		int nometric = SENTINEL;
+
+		double pvalue = (double)SENTINEL;
+		double chi_square = (double)SENTINEL;
+		for(String[] rows : data2)
+		{
+			if(old_metric == SENTINEL)
+			{
+				HashMap<String, ArrayList<Double>> map = new HashMap<String, ArrayList<Double>>();
+				ArrayList<Double> metriclist = new ArrayList<Double>();
+				metriclist.add(Double.parseDouble(rows[3]));
+				ArrayList<Double> nometriclist = new ArrayList<Double>();
+				nometriclist.add(Double.parseDouble(rows[4]));
+				ArrayList<Double> contentlist = new ArrayList<Double>();
+				contentlist.add(Double.parseDouble(rows[2]));
+
+				map.put("metric", metriclist);
+				map.put("nometric",nometriclist);
+				map.put("content", contentlist);
+
+				BucketTracker BTobj = new BucketTracker(String.valueOf(index), map);
+
+				bucketTracker.add(BTobj);
+
+				old_metric = (metriclist.get(0)).intValue();
+				old_nometric = (nometriclist.get(0)).intValue();
+			}
+			else
+			{
+				metric = Integer.parseInt(rows[3]);
+				nometric = Integer.parseInt(rows[4]);
+				//old_metric * nometric - metric * old_nometric
+				BigDecimal bg1 = BigDecimal.valueOf(old_metric);
+				BigDecimal bg2 = BigDecimal.valueOf(nometric);
+				BigDecimal bg3 = BigDecimal.valueOf(metric);
+				BigDecimal bg4 = BigDecimal.valueOf(old_nometric);
+				BigDecimal bg5 = bg1.multiply(bg2);
+				BigDecimal bg6 = bg3.multiply(bg4);
+				BigDecimal bg7 = bg5.subtract(bg6);
+				BigDecimal bg8 = bg7.multiply(bg7);
+				//BigDecimal chi_num = Math.pow((BigDecimal.valueOf(old_metric) * BigDecimal.valueOf(nometric) - BigDecimal.valueOf(metric) * BigDecimal.valueOf(old_nometric)),2); //* (old_metric * nometric - metric * old_nometric);
+				BigDecimal bg9 = bg1.add(bg2);
+				BigDecimal bg10 = bg3.add(bg4);
+				BigDecimal bg11 = bg9.add(bg10);
+				
+				BigDecimal chi_num = bg8.multiply(bg11);
+				//chi_num = chi_num * (old_metric + old_nometric + metric + nometric) * 1.0;
+				BigDecimal chi_den = (bg1.add(bg4)).multiply(bg1.add(bg3));
+				chi_den = chi_den.multiply((bg4.add(bg2).multiply(bg3.add(bg2))));
+				if(chi_den.equals(new BigDecimal(0)))
+				{
+					pvalue = 100000000;//hard-coded
+				}
+				else
+				{
+					BigDecimal chi_squareBD = chi_num.divide(chi_den,2, RoundingMode.HALF_UP);
+					chi_square = chi_squareBD.doubleValue();
+					pvalue = pochisq(chi_square, 1);
+				}
+				
+				if(pvalue < alpha && old_metric > nMetric*minProp)
+				{
+					index = index + 1;
+					HashMap<String, ArrayList<Double>> map = new HashMap<String, ArrayList<Double>>();
+					ArrayList<Double> metriclist = new ArrayList<Double>();
+					metriclist.add(Double.parseDouble(rows[3]));
+					ArrayList<Double> nometriclist = new ArrayList<Double>();
+					nometriclist.add(Double.parseDouble(rows[4]));
+					ArrayList<Double> contentlist = new ArrayList<Double>();
+					contentlist.add(Double.parseDouble(rows[2]));
+
+					map.put("metric", metriclist);
+					map.put("nometric",nometriclist);
+					map.put("content", contentlist);
+
+					BucketTracker BTobj = new BucketTracker(String.valueOf(index), map);
+
+					bucketTracker.add(BTobj);
+				}
+				else
+				{
+
+					ArrayList<Double> newmetriclist = bucketTracker.get(index).colvalsMap.get("metric");
+					double prev = newmetriclist.get(0);
+					newmetriclist.set(0,prev + Double.parseDouble(rows[3]));
+					bucketTracker.get(index).colvalsMap.put("metric", newmetriclist );
+					ArrayList<Double> newnometriclist = bucketTracker.get(index).colvalsMap.get("nometric");
+					prev = newnometriclist.get(0);
+					newnometriclist.set(0,prev + Double.parseDouble(rows[4]));
+					bucketTracker.get(index).colvalsMap.put("nometric", newnometriclist);
+					ArrayList<Double> newcontentlist = bucketTracker.get(index).colvalsMap.get("content");
+					newcontentlist.add(Double.parseDouble(rows[2]));
+					bucketTracker.get(index).colvalsMap.put("content",newcontentlist);
+				}
+				old_metric = bucketTracker.get(index).colvalsMap.get("metric").get(0).intValue();
+				old_nometric = bucketTracker.get(index).colvalsMap.get("nometric").get(0).intValue();
+			}
+
+			rows = Arrays.copyOf(rows, rows.length + 1);
+			rows[rows.length - 1] = "bucket_" + String.valueOf(index);// adding bucket_ to the last col
+			dataone.add(rows);
+		}
+		return bucketTracker;
+	}
+
+
+
+	public static double pochisq(double x, int df) {//calculating chi-square probability
+		double a, s;
+		double e, c, z;
+
+		if (x <= 0.0 || df < 1) {
+			return 1.0;
+		}
+		a = 0.5 * x;
+		boolean even = (df & 1) == 0;
+		double y = 0;
+		if (df > 1) {
+			y = ex(-a);
+		}
+		s = (even ? y : (2.0 * poz(-Math.sqrt(x))));
+		if (df > 2) {
+			x = 0.5 * (df - 1.0);
+			z = (even ? 1.0 : 0.5);
+			if (a > MAX_X) {
+				e = (even ? 0.0 : LOG_SQRT_PI);
+				c = Math.log(a);
+				while (z <= x) {
+					e = Math.log(z) + e;
+					s += ex(c * z - a - e);
+					z += 1.0;
+				}
+				return s;
+			} else {
+				e = (even ? 1.0 : (I_SQRT_PI / Math.sqrt(a)));
+				c = 0.0;
+				while (z <= x) {
+					e = e * (a / z);
+					c = c + e;
+					z += 1.0;
+				}
+				return c * y + s;
+			}
+		} else {
+			return s;
+		}
+	}
+
+
+	public static double poz(double z) {//a utility funxion for chi-square
+		double y, x, w;
+		double Z_MAX = 6.0; // Maximum meaningful z value 
+		if (z == 0.0) {
+			x = 0.0;
+		} else {
+			y = 0.5 * Math.abs(z);
+			if (y >= (Z_MAX * 0.5)) {
+				x = 1.0;
+			} else if (y < 1.0) {
+				w = y * y;
+				x = ((((((((0.000124818987 * w
+						- 0.001075204047) * w + 0.005198775019) * w
+						- 0.019198292004) * w + 0.059054035642) * w
+						- 0.151968751364) * w + 0.319152932694) * w
+						- 0.531923007300) * w + 0.797884560593) * y * 2.0;
+			} else {
+				y -= 2.0;
+				x = (((((((((((((-0.000045255659 * y
+						+ 0.000152529290) * y - 0.000019538132) * y
+						- 0.000676904986) * y + 0.001390604284) * y
+						- 0.000794620820) * y - 0.002034254874) * y
+						+ 0.006549791214) * y - 0.010557625006) * y
+						+ 0.011630447319) * y - 0.009279453341) * y
+						+ 0.005353579108) * y - 0.002141268741) * y
+						+ 0.000535310849) * y + 0.999936657524;
+			}
+		}
+		return z > 0.0 ? ((x + 1.0) * 0.5) : ((1.0 - x) * 0.5);
+	}
+
+	public static double ex(double x) {//a utility funxion for chi-square
+		return (x < -MAX_X) ? 0.0 : Math.exp(x);
+	}
+
+	private static ArrayList<String[]> datatwosort(ArrayList<String[] > datatwo) {//sort the array according to values
+		//ArrayList<String[]> res = new ArrayList<String[]>();
+		//for(String[] dts : datatwo)
+		//{
+		//	res.add(dts);
+		//}
+		Collections.sort(datatwo,new ValueComparator());
+		return datatwo;
+	}
+
+	private static void printBucketJson() {//not needed anymore
+		//U're done!
+	}
+
+}
